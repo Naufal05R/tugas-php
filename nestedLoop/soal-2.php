@@ -1,14 +1,19 @@
 <?php
-  for ($i = 1; $i <= 5; $i++) {
+
+$baris = intval(readline("Masukkan jumlah baris: "));
+
+for ($i = 1; $i <= $baris; $i++) {
     for ($j = 1; $j <= $i; $j++) {
-      echo "* ";
+        echo "* ";
     }
     echo "\n";
-  }
-  for ($i = 5; $i >= 1; $i--) {
+}
+
+for ($i = $baris; $i >= 1; $i--) {
     for ($j = 1; $j <= $i; $j++) {
-      echo "* ";
+        echo "* ";
     }
     echo "\n";
-  }
+}
+
 ?>
